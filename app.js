@@ -123,7 +123,7 @@ if ((process.env.TOKEN) && (process.env.PORT)) {
     specs.access_token = process.env.TOKEN;
     listener.verifyAccessToken(process.env.TOKEN).then((person) => {
         console.log(fonts.info(`token authenticated as ${person.displayName}`));
-        specs.selection.event = 'm, aa';
+        specs.selection.event = 'created';
         for (let resource_object of cli.firehose_resource_names) { 
             listener.runListener(specs, cli.options[resource_object]);
         }

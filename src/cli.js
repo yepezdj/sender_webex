@@ -1,7 +1,7 @@
 const readline = require('readline');
 const {fonts} = require('../util/fonts');
 
-const firehose_resource_names = ["rooms", "messages", "memberships", "attachmentActions"];
+const firehose_resource_names = ["messages", "attachmentActions"];
 const options = {
 
     rooms: {
