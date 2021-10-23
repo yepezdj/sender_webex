@@ -17,9 +17,7 @@ const options = {
         alias: 'm',
         description: 'messages',
         events: [
-            'all',
             'created',
-            'deleted'
         ]
     },
     memberships: {
