@@ -150,7 +150,8 @@ function _stopListener(resource, event) {
  * */
 function _forwardEvent(event_object) {
     let event = JSON.stringify(event_object);
-    console.log(typeof event)
+    console.log(typeof event_object)
+    console.log(event_object.data)
 
     //logging info to the console
     console.log(fonts.info(
